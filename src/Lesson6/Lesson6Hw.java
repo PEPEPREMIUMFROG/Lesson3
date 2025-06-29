@@ -1,6 +1,8 @@
+package Lesson6;
+
 import java.util.Arrays;
 
-class Lesson6Hw {
+public class Lesson6Hw {
     public static void main(String[] args) {
 
         int[] source = {1, 2, 3, 4};
