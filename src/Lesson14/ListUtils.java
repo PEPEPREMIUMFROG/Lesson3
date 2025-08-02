@@ -59,7 +59,6 @@ public class ListUtils {
     }
 
     public static List<OccurrenceInfo> findOccurance(List<String> list) {
-
         Collections.sort(list);
         List<OccurrenceInfo> result = new ArrayList<>();
         String prev = list.get(0);
@@ -94,6 +93,7 @@ public class ListUtils {
         public int getOccurrence() {
             return occurrence;
         }
+
 
         @Override
         public String toString() {
