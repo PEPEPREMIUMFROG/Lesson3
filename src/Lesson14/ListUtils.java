@@ -43,69 +43,39 @@ public class ListUtils {
     public static List<Integer> findUnique(List<Integer> list) {
         List<Integer> unique = new ArrayList<>();
         for (Integer num : list) {
-            if (!contains(unique, num)) {
+            if (!unique.contains(num)) {
                 unique.add(num);
             }
         }
         return unique;
     }
 
-    private static boolean contains(List<Integer> list, int target) {
-        for (Integer num : list) {
-            if (num == target) {
-                return true;
-            }
-        }
-        return false;
-    }
-
     public static void calcOccurance(List<String> list) {
-        List<String> uniqueWords = new ArrayList<>();
-        List<Integer> counts = new ArrayList<>();
-
-        for (String word : list) {
-            int index = indexOf(uniqueWords, word);
-            if (index == -1) {
-                uniqueWords.add(word);
-                counts.add(1);
-            } else {
-                counts.set(index, counts.get(index) + 1);
-            }
+        List<OccurrenceInfo> result = findOccurance(list);
+        for (OccurrenceInfo info : result) {
+            System.out.printf("%s: %d, ", info.getName(), info.getOccurrence());
         }
-
-        for (int i = 0; i < uniqueWords.size(); i++) {
-            System.out.println(uniqueWords.get(i) + ": " + counts.get(i));
-        }
+        System.out.println();
     }
 
     public static List<OccurrenceInfo> findOccurance(List<String> list) {
-        List<String> uniqueWords = new ArrayList<>();
-        List<Integer> counts = new ArrayList<>();
+
+        Collections.sort(list);
         List<OccurrenceInfo> result = new ArrayList<>();
-
-        for (String word : list) {
-            int index = indexOf(uniqueWords, word);
-            if (index == -1) {
-                uniqueWords.add(word);
-                counts.add(1);
+        String prev = list.get(0);
+        int count = 1;
+        for (int i = 1; i <= list.size(); ++i) {
+            if (i == list.size() || !prev.equals(list.get(i))) {
+                result.add(new OccurrenceInfo(prev, count));
+                if (i != list.size()) {
+                    prev = list.get(i);
+                    count = 1;
+                }
             } else {
-                counts.set(index, counts.get(index) + 1);
+                count++;
             }
-        }
-
-        for (int i = 0; i < uniqueWords.size(); i++) {
-            result.add(new OccurrenceInfo(uniqueWords.get(i), counts.get(i)));
         }
         return result;
-    }
-
-    private static int indexOf(List<String> list, String target) {
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).equals(target)) {
-                return i;
-            }
-        }
-        return -1;
     }
 
     public static class OccurrenceInfo {
@@ -115,6 +85,14 @@ public class ListUtils {
         public OccurrenceInfo(String name, int occurrence) {
             this.name = name;
             this.occurrence = occurrence;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getOccurrence() {
+            return occurrence;
         }
 
         @Override
