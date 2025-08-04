@@ -11,8 +11,7 @@ public class CoffeeOrderBoard {
     }
 
     public void deliver() {
-        Integer firstKey = orders.keySet().iterator().next();
-        System.out.printf("Выдан заказ %s\n", orders.remove(firstKey));
+        System.out.printf("Выдан заказ %s\n", orders.pollFirstEntry());
 
     }
 
