@@ -12,7 +12,6 @@ public class CoffeeOrderBoard {
 
     public void deliver() {
         System.out.printf("Выдан заказ %s\n", orders.pollFirstEntry());
-
     }
 
     public void deliver(int numberOfOrder) {
