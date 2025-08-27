@@ -1,4 +1,4 @@
-package Lesson19IO.LoggerConfiguration;
+package Lesson19IO.LoggerConfig;
 
 import Lesson19IO.Logger.LoggingLevel;
 

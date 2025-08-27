@@ -1,6 +1,6 @@
 package Lesson19IO.Logger;
 
-import Lesson19IO.LoggerConfiguration.FileLoggerConfiguration;
+import Lesson19IO.LoggerConfig.FileLoggerConfiguration;
 
 import java.io.*;
 import java.nio.file.Files;
