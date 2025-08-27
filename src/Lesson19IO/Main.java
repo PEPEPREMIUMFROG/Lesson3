@@ -2,7 +2,7 @@ package Lesson19IO;
 
 import Lesson19IO.LogConfigLoader.FileLoggerConfigurationLoader;
 import Lesson19IO.Logger.FileLogger;
-import Lesson19IO.LoggerConfiguration.FileLoggerConfiguration;
+import Lesson19IO.LoggerConfig.FileLoggerConfiguration;
 
 public class Main {
     public static void main(String[] args) {

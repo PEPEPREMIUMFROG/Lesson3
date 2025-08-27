@@ -1,5 +1,5 @@
 package Lesson19IO.LogConfigLoader;
-import Lesson19IO.LoggerConfiguration.FileLoggerConfiguration;
+import Lesson19IO.LoggerConfig.FileLoggerConfiguration;
 import Lesson19IO.Logger.LoggingLevel;
 
 import java.util.Scanner;
