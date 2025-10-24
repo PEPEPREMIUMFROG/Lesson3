@@ -1,0 +1,20 @@
+GET https://timeapi.io/api/health/check
+Accept: application/json
+
+GET https://timeapi.io/api/time/current/zone?timeZone=Europe/Moscow
+Accept: application/json
+
+GET https://timeapi.io/api/time/current/ip?ipAddress=83.139.167.247
+Accept: application/json
+
+GET https://timeapi.io/api/conversion/dayoftheweek/2022-02-22
+Accept: application/json
+
+POST https://timeapi.io/api/conversion/translate
+Content-Type: application/json
+Accept: application/json
+
+{
+  "date": "2022-02-22T19:33:20Z",
+  "language": "ru"
+}

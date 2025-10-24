@@ -1,0 +1,9 @@
+curl -X GET "https://timeapi.io/api/health/check" -H "accept: application/json"
+
+curl -X GET "https://timeapi.io/api/time/current/zone?timeZone=Europe/Moscow" -H "accept: application/json"
+
+curl -X GET "https://timeapi.io/api/time/current/ip?ipAddress=83.139.167.247" -H "accept: application/json"
+
+curl -X GET "https://timeapi.io/api/conversion/dayoftheweek/2022-02-22" -H "accept: application/json"
+
+curl -X POST "https://timeapi.io/api/conversion/translate"  -H "Content-Type: application/json" -H "accept: application/json"  -d "{\"date\": \"2022-02-22T19:33:20Z\", \"language\": \"ru\"}"

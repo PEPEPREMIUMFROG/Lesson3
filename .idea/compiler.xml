@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="L27_BuildSystems" />
         <module name="L26_JUnit" />
         <module name="L30_JDBC" />
-        <module name="L27_BuildSystems" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="L26_Junit" target="21" />
+      <module name="L32" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>
