@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="L27_BuildSystems" />
+        <module name="l32" />
         <module name="L26_JUnit" />
         <module name="L30_JDBC" />
       </profile>
