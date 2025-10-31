@@ -1,0 +1,41 @@
+services:
+  postgres:
+    image: postgres:15-alpine3.21
+    container_name: library_db
+    environment:
+      POSTGRES_DB: library
+      POSTGRES_USER: library_user
+      POSTGRES_PASSWORD: library_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U library_user -d library"]
+      interval: 1s
+      timeout: 1s
+      retries: 5
+
+  tomcat:
+    image: tomcat:11.0-jdk21
+    container_name: library_tomcat
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./target/library.war:/usr/local/tomcat/webapps/library.war
+      - tomcat_cache:/usr/local/tomcat/work
+      - tomcat_temp:/usr/local/tomcat/temp
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - DB_URL=jdbc:postgresql://postgres:5432/library
+      - DB_USER=library_user
+      - DB_PASSWORD=library_password
+    command: ["catalina.sh", "run"]
+
+volumes:
+  postgres_data:
+  tomcat_cache:
+  tomcat_temp:
