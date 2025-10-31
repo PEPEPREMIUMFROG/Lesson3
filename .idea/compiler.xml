@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="soap-library" />
+        <module name="NetworksSystem" />
+        <module name="library-system" />
         <module name="L27_BuildSystems" />
         <module name="l32" />
         <module name="L26_JUnit" />
