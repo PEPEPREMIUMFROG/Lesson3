@@ -13,6 +13,7 @@
         <module name="l32" />
         <module name="L26_JUnit" />
         <module name="L30_JDBC" />
+        <module name="L36" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
