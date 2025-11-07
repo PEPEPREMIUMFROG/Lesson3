@@ -1,0 +1,70 @@
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - CoffeeOrderBoard initialized.
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=1, customerName='Ivan'}
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=2, customerName='Andrew'}
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=3, customerName='Alex'}
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=1, customerName='Ivan'}
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=4, customerName='Vladimir'}
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - Delivered specific order: Order{orderNumber=3, customerName='Alex'}
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=2, customerName='Andrew'}
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=4, customerName='Vladimir'}
+2025-11-07 14:54:40 [main] WARN  org.example.CoffeeOrderBoard - Attempted to deliver from an empty queue.
+2025-11-07 14:54:40 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - CoffeeOrderBoard initialized.
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=1, customerName='Ivan'}
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=2, customerName='Andrew'}
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=3, customerName='Alex'}
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=1, customerName='Ivan'}
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=4, customerName='Vladimir'}
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - Delivered specific order: Order{orderNumber=3, customerName='Alex'}
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=2, customerName='Andrew'}
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=4, customerName='Vladimir'}
+2025-11-07 15:03:31 [main] WARN  org.example.CoffeeOrderBoard - Attempted to deliver from an empty queue.
+2025-11-07 15:03:31 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - CoffeeOrderBoard initialized.
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=1, customerName='Ivan'}
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=2, customerName='Andrew'}
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=3, customerName='Alex'}
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=1, customerName='Ivan'}
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=4, customerName='Vladimir'}
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - Delivered specific order: Order{orderNumber=3, customerName='Alex'}
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=2, customerName='Andrew'}
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=4, customerName='Vladimir'}
+2025-11-07 15:05:24 [main] WARN  org.example.CoffeeOrderBoard - Attempted to deliver from an empty queue.
+2025-11-07 15:05:24 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - CoffeeOrderBoard initialized.
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=1, customerName='Ivan'}
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=2, customerName='Andrew'}
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=3, customerName='Alex'}
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=1, customerName='Ivan'}
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=4, customerName='Vladimir'}
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - Delivered specific order: Order{orderNumber=3, customerName='Alex'}
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=2, customerName='Andrew'}
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=4, customerName='Vladimir'}
+2025-11-07 15:05:37 [main] WARN  org.example.CoffeeOrderBoard - Attempted to deliver from an empty queue.
+2025-11-07 15:05:37 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - CoffeeOrderBoard initialized.
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=1, customerName='Ivan'}
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=2, customerName='Andrew'}
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=3, customerName='Alex'}
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=1, customerName='Ivan'}
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - Added new order: Order{orderNumber=4, customerName='Vladimir'}
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - Delivered specific order: Order{orderNumber=3, customerName='Alex'}
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=2, customerName='Andrew'}
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - Delivered order from queue: Order{orderNumber=4, customerName='Vladimir'}
+2025-11-07 15:06:38 [main] WARN  org.example.CoffeeOrderBoard - Attempted to deliver from an empty queue.
+2025-11-07 15:06:38 [main] INFO  org.example.CoffeeOrderBoard - Drawing current order queue state.
