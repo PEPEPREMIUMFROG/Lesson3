@@ -14,7 +14,7 @@ public class Main {
         studentDAO.save(student3);
         System.out.println("Students added.\n");
         System.out.println("--- Fetching All Students ---");
-        List<Student> allStudents = studentDAO.findAll();
+        List<Student> allStudents = studentDAO.getAll();
         if (allStudents != null) {
             for (Student s : allStudents) {
                 System.out.println(s);
@@ -56,7 +56,7 @@ public class Main {
         }
         System.out.println();
         System.out.println("--- Fetching All Students After Deletion ---");
-        List<Student> remainingStudents = studentDAO.findAll();
+        List<Student> remainingStudents = studentDAO.getAll();
         if (remainingStudents != null) {
             for (Student s : remainingStudents) {
                 System.out.println(s);
