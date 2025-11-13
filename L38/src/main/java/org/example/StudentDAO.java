@@ -61,7 +61,7 @@ public class StudentDAO {
     }
 
     @SuppressWarnings("unchecked")
-    public List<Student> findAll() {
+    public List<Student> getAll() {
         try (Session session = HibernateSession.getSessionFactory().openSession()) {
             return session.createQuery("FROM Student", Student.class).list();
         } catch (Exception e) {
