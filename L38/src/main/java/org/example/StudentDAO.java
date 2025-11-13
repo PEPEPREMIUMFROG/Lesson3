@@ -6,7 +6,7 @@ import java.util.List;
 
 public class StudentDAO {
 
-    public void saveStudent(Student student) {
+    public void save(Student student) {
         Transaction transaction = null;
         try (Session session = HibernateSession.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
@@ -20,7 +20,7 @@ public class StudentDAO {
         }
     }
 
-    public void updateStudent(Student student) {
+    public void update(Student student) {
         Transaction transaction = null;
         try (Session session = HibernateSession.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
@@ -34,7 +34,7 @@ public class StudentDAO {
         }
     }
 
-    public void deleteStudent(Long id) {
+    public void delete(Long id) {
         Transaction transaction = null;
         try (Session session = HibernateSession.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
@@ -51,7 +51,7 @@ public class StudentDAO {
         }
     }
 
-    public Student getStudent(Long id) {
+    public Student getById(Long id) {
         try (Session session = HibernateSession.getSessionFactory().openSession()) {
             return session.get(Student.class, id);
         } catch (Exception e) {
@@ -61,7 +61,7 @@ public class StudentDAO {
     }
 
     @SuppressWarnings("unchecked")
-    public List<Student> getAllStudents() {
+    public List<Student> findAll() {
         try (Session session = HibernateSession.getSessionFactory().openSession()) {
             return session.createQuery("FROM Student", Student.class).list();
         } catch (Exception e) {
